@@ -1,0 +1,25 @@
+<div class="container">
+  <div *ngIf="authService.userStatus.role == 'admin'">
+    <div class="form-group">
+      <form>
+      <label for="formGroupExampleInput">Proszę wpisać właściwość PERSISTENCE (local, session lub none)</label>
+      <input [(ngModel)]="local" name="local" type="text" class="form-control" id="formGroupExampleInput" placeholder="PERSISTENCE">
+      <button (click)="XD()" class="btn btn-primary">ZATWIERDZ</button>
+      </form>
+      {{tekst}}
+    </div>
+  </div>
+  <div class="box" id="box">
+    <div id="xd" *ngFor="let wycieczka of tripService.List" class = 'wycieczka' [ngStyle]="{display:  usun1(tripService.List.indexOf(wycieczka))}">
+      <div class="zdjecie"><img src="../../assets/images/{{wycieczka.Zdjecie}}" width="260px" height="200px"></div>
+      <div class="nazwa">{{wycieczka.Nazwa | uppercase}}, {{wycieczka.DocelowyKraj | uppercase}}</div>
+      <button id="button3" *ngIf="authService.userStatus && this.authService.userStatus.role == 'admin'" type="button" class="btn btn-warning" (click)="usun(tripService.List.indexOf(wycieczka))">Usuń</button>
+      <div id="wolne">{{wyswietl(tripService.List.indexOf(wycieczka))}}</div>
+      <div class="edycja"><a routerLink="/edit" (click) = 'update(wycieczka)' routerLinkActive="active"><button class="btn btn-primary">EDYCJA</button></a></div>
+      <router-outlet></router-outlet>
+      <div style="clear: both"></div>
+    </div>
+  </div>
+  <div style="clear: both"></div>
+</div>
+

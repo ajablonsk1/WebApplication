@@ -1,0 +1,19 @@
+<div class="container">
+  <div><span id="zarezerwowane"[ngStyle]="{backgroundColor: styl()}" class="badge badge-secondary">Ilosc zarezerwowanych wycieczek: {{this.tripService.licznik}}</span></div>
+  <div class="box">
+  <div class="wycieczka">
+    <div class="zdjecie"><img src="../../assets/images/{{WybranaWycieczka.Zdjecie}}" width="260px" height="200px"></div>
+    <div class="nazwa">{{WybranaWycieczka.Nazwa | uppercase}}, {{WybranaWycieczka.DocelowyKraj | uppercase}}</div>
+    <div class="data">Od {{WybranaWycieczka.DataRozpoczecia}} do {{WybranaWycieczka.DataZakonczenia}}</div>
+    <div class="cena">{{WybranaWycieczka.Cena}} zł</div>
+    <div class="miejsca">Ilosc osob: {{WybranaWycieczka.IloscMiejsc}}</div>
+    <button id="button1" [ngStyle]="{display: display(ListaWycieczek.indexOf(WybranaWycieczka))}" (click)="add(ListaWycieczek.indexOf(WybranaWycieczka), WybranaWycieczka)" type="button"   class="btn btn-success">+</button>
+    <button id="button2" (click)="remove(ListaWycieczek.indexOf(WybranaWycieczka), WybranaWycieczka)" [ngStyle]="{display: display1(ListaWycieczek.indexOf(WybranaWycieczka))}"  type="button"  class="btn btn-danger">-</button>
+    <ngb-rating [(rate)]="Selected[ListaWycieczek.indexOf(WybranaWycieczka)]"></ngb-rating>
+  </div>
+  </div>
+  <div class="s">
+    {{WybranaWycieczka.Opis}}
+  </div>
+  <div style="clear: both"></div>
+</div>

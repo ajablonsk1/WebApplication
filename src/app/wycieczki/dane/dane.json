@@ -1,0 +1,27 @@
+
+[
+  {"Nazwa": "Wycieczka 1", "DocelowyKraj": "Argentyna", "DataRozpoczecia": "31.07.2021", "DataZakonczenia": "08.08.2021",
+  "Cena": "4100", "IloscMiejsc": "21", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "gora-fitz-roy-argentyna.jpg"},
+  {"Nazwa": "Wycieczka 2", "DocelowyKraj": "Brazylia", "DataRozpoczecia": "3.07.2021", "DataZakonczenia": "14.07.2021",
+  "Cena": "3500", "IloscMiejsc": "24", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "brazylia.jpg"},
+  {"Nazwa": "Wycieczka 3", "DocelowyKraj": "Hiszpania", "DataRozpoczecia": "01.09.2021", "DataZakonczenia": "15.09.2021",
+  "Cena": "2000", "IloscMiejsc": "33", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "hiszpania.jpg"},
+  {"Nazwa": "Wycieczka 4", "DocelowyKraj": "Włochy", "DataRozpoczecia": "23.04.2021", "DataZakonczenia": "06.05.2021",
+  "Cena": "1900", "IloscMiejsc": "35", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "włochy.jpg"},
+  {"Nazwa": "Wycieczka 5", "DocelowyKraj": "Islandia", "DataRozpoczecia": "31.06.2021", "DataZakonczenia": "13.07.2021",
+  "Cena": "2800", "IloscMiejsc": "12", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "islandia.jpg"},
+  {"Nazwa": "Wycieczka 6", "DocelowyKraj": "Chorwacja", "DataRozpoczecia": "13.07.2021", "DataZakonczenia": "28.07.2021",
+  "Cena": "1700", "IloscMiejsc": "31", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "chorwacja.jpg"},
+  {"Nazwa": "Wycieczka 7", "DocelowyKraj": "Tajlandia", "DataRozpoczecia": "01.07.2021", "DataZakonczenia": "16.07.2021",
+  "Cena": "4500", "IloscMiejsc": "18", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "tajlandia.jpg"},
+  {"Nazwa": "Wycieczka 8", "DocelowyKraj": "Chiny", "DataRozpoczecia": "28.05.2021", "DataZakonczenia": "13.06.2021",
+  "Cena": "4300", "IloscMiejsc": "32", "Opis": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante ipsum, sollicitudin et leo in, egestas mattis tellus. Nam vel scelerisque massa, gravida gravida velit.",
+  "Zdjecie": "chiny.jpg"}
+]

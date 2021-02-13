@@ -1,0 +1,13 @@
+<h1>TWÓJ KOSZYK:</h1>
+<div class="koszyk">
+<div *ngFor="let f of Reserved">
+<div class="card" id="koszyk" style="width: 18rem;">
+  <img class="card-img-top" src="/assets/images/{{f.Zdjecie}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{f.Nazwa}}</h5>
+    <p class="card-text">{{f.Cena}}zł</p>
+    <a href="#" (click)="click(f) "class="btn btn-primary">ZAMÓW</a>
+  </div>
+</div>
+</div>
+</div>

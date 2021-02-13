@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="box">
+    <div *ngFor="let WybranaWycieczka of List" class="wycieczka">
+      <div *ngIf="WybranaWycieczka != null">
+      <div class="zdjecie"><img src="../../assets/images/{{WybranaWycieczka.Zdjecie}}" width="260px" height="200px"></div>
+      <div class="nazwa">{{WybranaWycieczka.Nazwa | uppercase}}, {{WybranaWycieczka.DocelowyKraj | uppercase}}</div>
+      <div class="data">Od {{WybranaWycieczka.DataRozpoczecia}} do {{WybranaWycieczka.DataZakonczenia}}</div>
+      <div class="cena">{{WybranaWycieczka.Cena}} zł</div>
+      <div class="miejsca">Ilosc osob: {{WybranaWycieczka.IloscMiejsc}}</div>
+      </div>
+    </div>
+    <div style="clear: both"></div>
+</div>
+</div>

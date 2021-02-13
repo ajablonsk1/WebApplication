@@ -1,0 +1,18 @@
+<div class = "container">
+  <div id="title">BIURO PODROZY A.TRAVEL</div>
+  <div id="baner">
+    <nav class="navbar navbar-light bg-light">
+    <div class = 'cos' id = "wycieczki"><a class='link' routerLink="/wycieczki" routerLinkActive="active"><h1 class="navi">WYCIECZKI</h1></a> </div>
+    <div *ngIf="authService.userStatus && (authService.userStatus.role == 'admin' || authService.userStatus.role == 'pracownik')" class = 'cos' id = "formularz"><a class='link' routerLink="/form" routerLinkActive="active"><h1 class="navi">DODAJ WYCIECZKE</h1></a></div>
+    <div *ngIf="authService.userStatus"class = 'cos' id = "kosz"><a class='link' routerLink="/kosz" routerLinkActive="active"><h1 class="navi">KOSZYK</h1></a></div>
+      <div *ngIf="!authService.userStatus" class = 'cos' id = "logowanie"><a class='link' routerLink="/logowanie" routerLinkActive="active"><h1 class="navi">ZALOGUJ SIĘ</h1></a></div>
+      <div *ngIf="!authService.userStatus" class = 'cos' id = "rejestracja"><a class='link' routerLink="/rejestracja" routerLinkActive="active"><h1 class="navi">REJESTRACJA</h1></a></div>
+      <div *ngIf="authService.userStatus"><a class='link' routerLink="/zamowione" routerLinkActive="active"><h1 class="navi">ZAMÓWIONE</h1></a></div>
+      <div *ngIf="authService.userStatus" (click)="authService.SignOut()" class = 'cos' id = "wylogowanie"><a class='link' routerLink="/wycieczki" routerLinkActive="active"><h1 class="navi">WYLOGUJ</h1></a></div>
+      <div *ngIf="authService.userStatus && (authService.userStatus.role === 'admin' || authService.userStatus.role == 'pracownik')"class = "cos"><a class='link' routerLink="/archiwalne" routerLinkActive="active"><h1 class="navi">ARCHIWALNE WYCIECZKI</h1></a></div>
+      <div *ngIf="authService.userStatus && (authService.userStatus.role === 'admin' || authService.userStatus.role == 'pracownik')"class = "cos"><a class='link' routerLink="/admin" routerLinkActive="active"><h1 class="navi">ZARZADZANIE STRONĄ</h1></a></div>
+    </nav>
+    <div *ngIf="authService.userStatus" class="info">Użytkownik o adresie email {{this.authService.userStatus.email}} jest zalogowany</div>
+  </div>
+</div>
+<router-outlet (activate)="onActivate($event)"></router-outlet>

@@ -1,0 +1,9 @@
+.container {
+  width: 400px;
+  margin-top: 50px;
+}
+
+.error{
+  margin-bottom: 15px;
+  color: red;
+}

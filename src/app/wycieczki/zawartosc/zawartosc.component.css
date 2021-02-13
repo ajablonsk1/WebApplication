@@ -1,0 +1,94 @@
+.container{
+  margin-top: 50px;
+  width: 1600px;
+  height: auto;
+  text-align: center;
+}
+
+#edycja{
+  margin-bottom: 30px;
+}
+
+#wiecej{
+  margin-top: 70px;
+}
+
+.wycieczka{
+  text-align: center;
+  float: left;
+  width: 300px;
+  height: 520px;
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 18px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 18px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 18px 0 rgba(0,0,0,0.75)
+}
+
+#button4{
+  margin-bottom: 10px;
+}
+
+img{
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+
+.nazwa{
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.data{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.cena{
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.miejsca{
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+button{
+  margin: 40px 10px 10px 10px;
+}
+
+#wolne{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max{
+  border: solid 3px red;
+}
+
+.min{
+  border: solid 3px green;
+}
+
+.box{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#zarezerwowane{
+  margin-bottom: 40px;
+  font-size: 22px;;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px){
+  .container{
+    width: 300px;
+  }
+}
+
+

@@ -1,0 +1,17 @@
+<div class="container">
+<div class="box" id="box">
+  <div><span *ngIf="authService.userStatus" id="zarezerwowane"[ngStyle]="{backgroundColor: styl()}" class="badge badge-secondary">Ilosc zarezerwowanych wycieczek: {{this.tripService.licznik}}</span></div>
+  <div id="xd" *ngFor="let wycieczka of tripService.List" class = 'wycieczka' [ngStyle]="{backgroundColor: background(tripService.List.indexOf(wycieczka)),display:  usun1(tripService.List.indexOf(wycieczka))}" [ngClass]="{'max': maks(tripService.List.indexOf(wycieczka)), 'min': minn(tripService.List.indexOf(wycieczka))}">
+    <div class="zdjecie"><img src="../../assets/images/{{wycieczka.Zdjecie}}" width="260px" height="200px"></div>
+    <div class="nazwa">{{wycieczka.Nazwa | uppercase}}, {{wycieczka.DocelowyKraj | uppercase}}</div>
+    <button id="button1" *ngIf="this.authService.userStatus" [ngStyle]="{display: display(tripService.List.indexOf(wycieczka))}" (click)="add(tripService.List.indexOf(wycieczka), wycieczka)" type="button"   class="btn btn-success">+</button>
+    <button *ngIf="authService.userStatus" id="button2" (click)="remove(tripService.List.indexOf(wycieczka), wycieczka)" [ngStyle]="{display: display1(tripService.List.indexOf(wycieczka))}"  type="button"  class="btn btn-danger">-</button>
+    <div id="wolne">{{wyswietl(tripService.List.indexOf(wycieczka))}}</div>
+    <a *ngIf="this.authService.userStatus" (click)="onActive(wycieczka, tripService.List)" routerLink="/info" routerLinkActive="active"><button id="button4" class="btn btn-info">Szczegółowe informacje</button></a>
+    <div id="wiecej" *ngIf="!authService.userStatus">Proszę się zalogować, aby uzyskać więcej informacji! :)</div>
+    <router-outlet></router-outlet>
+    <div style="clear: both"></div>
+  </div>
+</div>
+<div style="clear: both"></div>
+</div>

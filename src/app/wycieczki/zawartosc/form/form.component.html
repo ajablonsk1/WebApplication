@@ -1,0 +1,39 @@
+<div id="form">
+  <div class="form-group">
+  <form [formGroup]="modelForm" (ngSubmit)="onSubmit(modelForm)">
+    <label id="add">DODAJ WYCIECZKE</label>
+    <div class="formularz"><label>
+      <input name="name" placeholder="Nazwa" formControlName="Nazwa" type="text" class="form-control">
+    </label></div>
+    <div class="formularz"><label>
+      <input name="country" placeholder="Kraj" formControlName="DocelowyKraj" type="text" class="form-control">
+    </label></div>
+    <div class="formularz"><label>
+      <input name="od" placeholder="Od" formControlName="DataRozpoczecia" type="text" class="form-control">
+    </label></div>
+    <div class="formularz"><label>
+      <input name="do" placeholder="Do" formControlName="DataZakonczenia" type="text" class="form-control">
+    </label></div>
+    <div class="formularz"><label>
+      <input name="cost" type="number" placeholder="Cena" formControlName="Cena" class="form-control">
+    </label></div>
+    <div class="formularz"><label>
+      <input name="cost" type="number" placeholder="IloscMiejsc" formControlName="IloscMiejsc" class="form-control">
+    </label></div>
+    <div class="formularz" id="zdjecie_">
+      <label> Zdjecie:
+        <select id="exampleFormControlSelect1"  multiple class="form-control" name="zdjecie" formControlName="Zdjecie">
+          <option value="włochy.jpg">Włochy</option>
+          <option value="islandia.jpg">Islandia</option>
+          <option value="hiszpania.jpg">Hiszpania</option>
+          <option value="brazylia.jpg">Brazylia</option>
+          <option value="gora-fitz-roy-argentyna.jpg">Argentyna</option>
+          <option value="tajlandia.jpg">Tajlandia</option>
+          <option value="chorwacja.jpg">Chorwacja</option>
+          <option value="chiny.jpg">Chiny</option>
+        </select>
+      </label></div>
+    <button id="button4" [disabled]="status()" type="submit" class="btn btn-light">Dodaj</button>
+  </form>
+</div>
+</div>

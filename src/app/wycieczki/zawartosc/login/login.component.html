@@ -1,0 +1,14 @@
+<div class = 'container'>
+<form *ngIf="!authService.userStatus">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" [(ngModel)]="username" name="username">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Hasło</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" [(ngModel)]="password" name="password">
+  </div>
+  <div class = "error" id="error" >{{authService.error}}</div>
+  <button type="submit" class="btn btn-primary" (click)="authService.SignIn(username, password)">Zaloguj</button>
+</form>
+</div>

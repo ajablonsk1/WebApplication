@@ -1,0 +1,73 @@
+.wycieczka{
+  width: 300px;
+  height: 640px;
+  margin: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 18px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 18px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 18px 0 rgba(0,0,0,0.75)
+}
+
+#zarezerwowane{
+  margin-bottom: 40px;
+  font-size: 22px;;
+  border-radius: 20px;
+}
+
+button{
+  margin: 40px 10px 10px 10px;
+}
+
+ngb-rating {
+  color: #FFC107;
+  margin-top: 20px;
+  font-size: 32px;
+}
+
+.box{
+  float: left;
+  margin-left: 40px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+img{
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+
+.nazwa{
+  font-size: 22px;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.data{
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.cena{
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.miejsca{
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+.container{
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.s{
+  margin-left: 20px;
+  padding: 20px;
+}
