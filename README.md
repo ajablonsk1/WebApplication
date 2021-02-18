@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
 
+## About App
+
+It's an Angular web application used for clients to reservate trips or for worker to manage the trips. Database and user authentitacion is done using Google Firebase. There are four distinguishable roles: user, vip, worker and admin (of course each one hasdifferent permissions).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
